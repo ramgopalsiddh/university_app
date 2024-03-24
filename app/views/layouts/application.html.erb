@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>UniversityApp</title>
+    <title>Tech University</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -11,6 +11,23 @@
   </head>
 
   <body>
-    <%= yield %>
+    <%# nav bar %>
+    <nav>
+      <div class="container">
+        <div class="nav-wrapper">
+          <a href="#" class="brand-logo right">Tech University</a>
+          <ul id="nav-mobile" class="left hide-on-med-and-down">
+            <li><%= link_to 'Home', root_path %></li>
+            <li><%= link_to 'About', about_path %></li>
+            <li><%= link_to 'New Course', courses_new_path %></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <%= yield %>
+    </div>
+
   </body>
 </html>
