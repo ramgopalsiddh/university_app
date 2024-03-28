@@ -4,6 +4,7 @@ import "controllers"
 
 // DROPDOWN CODE:
 $(document).ready(function() {
-    $(".dropdown-trigger").dropdown();
-    $('.sidenav').sidenav();
+  $(".dropdown-trigger").dropdown();
+  $('.sidenav').sidenav();
+  $('#fade-out-target').fadeOut(4000);
   });
