@@ -1,20 +1,5 @@
 <header>
 
-  <!-- Dropdown Structure -->
-  <ul id="dropdown1" class="dropdown-content">
-    <li><a href="#!">one</a></li>
-    <li><a href="#!">two</a></li>
-    <li class="divider"></li>
-    <li><a href="#!">three</a></li>
-  </ul>
-
-  <ul id="dropdown2" class="dropdown-content">
-    <li><a href="#!">one</a></li>
-    <li><a href="#!">two</a></li>
-    <li class="divider"></li>
-    <li><a href="#!">three</a></li>
-  </ul>
-
   <%# nav bar %>
   <nav>
     <div class="container">
@@ -24,7 +9,9 @@
       <ul id="nav-mobile" class="left hide-on-med-and-down">
         <li><%= link_to 'Home', root_path %></li>
         <li><%= link_to 'New Course', courses_new_path %></li>
-        <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Account<i class="material-icons right">arrow_drop_down</i></a></li>
+
+        <li><%= session_link %></li>
+
       </ul>
       </div>
     </div>
@@ -33,7 +20,9 @@
   <ul class="sidenav" id="mobile-demo">
     <li><%= link_to 'Home', root_path %></li>
     <li><%= link_to 'New Course', courses_new_path %></li>
-    <li><a class="dropdown-trigger" href="#!" data-target="dropdown2">Account<i class="material-icons right">arrow_drop_down</i></a></li>
+
+    <li><%= session_link %></li>
+
   </ul>
 
 <% flash.each do |key, message|%>
