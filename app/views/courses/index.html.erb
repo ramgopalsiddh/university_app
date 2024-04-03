@@ -13,7 +13,12 @@
           <p> <%= course.description %> </p>
         </div>
         <div class="card-action">
-          <a href="#">Enroll</a>
+          <% if logged_in? && !(current_user.courses.include?(course)) %>
+            <%= link_to "Enroll", course_enroll_path(course_id: course.id), data: { turbo_method: :post } %>
+          <% end %>
+          <% if logged_in? && (current_user.courses.include?(course))%>
+            <%= link_to "Unenroll", course_unenroll_path(course_id: course.id), data: { turbo_method: :delete } %>
+          <% end %>
           <a href="#">Info</a>
         </div>
       </div>
