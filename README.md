@@ -18,6 +18,30 @@
 ---
 
 
+## Screenshots
+
+#### Home page without login
+  <img src="screenshots/1_login_form.png">
+
+#### All Courses
+  <img src="screenshots/2_course_listing.png">
+
+#### All Students
+  <img src="screenshots/3_student_listing.png">
+
+#### Show user profile
+  <img src="screenshots/4_user_profile.png">
+
+#### Edit User profile
+  <img src="screenshots/5_edit_profile.png">
+
+#### Show other user's profile
+  <img src="screenshots/6_user_profile_when_not_login.png">
+
+#### Home when User don't login
+  <img src="screenshots/7_home_when_not_login.png">
+
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
